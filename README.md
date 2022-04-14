@@ -20,8 +20,13 @@ link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.c
 - toggle
 document.getElementsByClassName('list-group')[0].classList.toggle('show');   
 toggle 한번누르면 추가 두번누르면 삭제   
-![001_img](https://github.com/chu9400/Re_Zero_JS/blob/master/img/001_img.png "001_img")
+![img_001](https://github.com/chu9400/Re_Zero_JS/blob/master/img/img_001.png "img_001")
 
 ---
 
-- 드디어 되는건가
+#### querySelector
+
+![img_002](https://github.com/chu9400/Re_Zero_JS/blob/master/img/img_002.png "img_002")
+
+
+---
