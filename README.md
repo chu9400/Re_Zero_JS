@@ -13,7 +13,7 @@ link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.c
 
 - class명을 원하는 요소에 추가하는 법은 
 
-셀렉터로찾은요소.classList.add('클래스명') 이렇게 쓰면 됩니다.
+&nbsp;&nbsp; 셀렉터로찾은요소.classList.add('클래스명') 이렇게 쓰면 됩니다.
 
 class명을 원하는 요소에서 제거하는 법은 
 
