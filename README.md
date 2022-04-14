@@ -24,4 +24,4 @@ toggle 한번누르면 추가 두번누르면 삭제
 
 - 이미지 넣기
 
-![테스트](https://github.com/chu9400/Re_Zero_JS/blob/master/img/001_img.png "테스트")
+![001_img](https://github.com/chu9400/Re_Zero_JS/blob/master/img/001_img.png "001_img")
