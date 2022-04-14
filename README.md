@@ -4,5 +4,5 @@
 
 
 - toggle
-document.getElementsByClassName('list-group')[0].classList.toggle('show');
+document.getElementsByClassName('list-group')[0].classList.toggle('show');   
 toggle 한번누르면 추가 두번누르면 삭제
