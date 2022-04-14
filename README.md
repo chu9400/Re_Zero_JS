@@ -12,10 +12,10 @@ link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.c
 #### 탈부착 class 
 
 - class명을 원하는 요소에 추가하는 법은   
-&nbsp;&nbsp;&nbsp; 셀렉터로찾은요소.classList.add('클래스명') 이렇게 쓰면 됩니다.
+&nbsp;&nbsp; 셀렉터로찾은요소.classList.add('클래스명') 이렇게 쓰면 됩니다.
 
 - class명을 원하는 요소에서 제거하는 법은   
-&nbsp;&nbsp;&nbsp; 셀렉터로찾은요소.classList.remove('클래스명') 이렇게 쓰면 됩니다.
+&nbsp;&nbsp; 셀렉터로찾은요소.classList.remove('클래스명') 이렇게 쓰면 됩니다.
 
 - toggle
 document.getElementsByClassName('list-group')[0].classList.toggle('show');   
@@ -24,4 +24,4 @@ toggle 한번누르면 추가 두번누르면 삭제
 
 - 이미지 넣기
 
-![테스트](D:\코딩애플\Re_Zero_JS\img\001_img "테스트")
+![테스트](https://github.com/chu9400/Re_Zero_JS/blob/master/img/001_img.png "테스트")
