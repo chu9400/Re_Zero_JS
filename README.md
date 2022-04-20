@@ -33,15 +33,15 @@ toggle 한번누르면 추가 두번누르면 삭제
 
 #### input, change 이벤트
 
-- input에 키보드 입력마다 이벤트 발생
+- input에 키보드 입력마다 이벤트 발생   
 document.getElementById('email').addEventListener('input', function(){
   console.log('안녕')
 });
 
 
-- input에 포커스를 잃어야 이벤트 발생
+- input에 포커스를 잃어야 이벤트 발생   
 document.getElementById('email').addEventListener('change', function(){
   console.log('안녕')
 });
 
-ㅁㄴㅇㅁㄴㅇㄴㅇ
+---
