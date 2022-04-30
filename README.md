@@ -45,3 +45,31 @@ document.getElementById('email').addEventListener('change', function(){
 });
 
 ---
+### 움직이는 UI
+- 속성  
+scale - 크기를 변형함   
+skew - 기울어짐을 변형함   
+rotate - 회전을 줌   
+translate - 위치를 이동함   
+perspective - 3D효과를 위한 원근감을 부여함 (부모요소에 적용시킴)   
+matrix - perspective를 제외한 모든 요소들을 한번에 일괄 적용시킴      
+
+- 문법   
+transform: translate (50px 50px);   
+transform: translateX (100px);   
+transform: translateY (-100px);   
+transform: translateZ (-100px);   
+
+
+---
+
+### 함수 소수점 다루기
+- (555 * 1.1).toFixed();   
+소수점들을 생략해줌   
+
+- 문자 '숫자'를 숫자로 바꾸기   
+let num = (555 * 1.1).toFixed();
+parseFloat(num);   
+parseint(num);   
+toFixed는 문자로 반환하는데 이걸 다시 숫자로 반환하기.
+
