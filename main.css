@@ -20,9 +20,11 @@
     background: white;
     border-radius: 5px;
     padding: 30px;
-    top: -20vh;
+    top: -30vh;
+    left: 80vh;
     position: absolute;
-    transition: all 1s;
+    transition: all 1s; 
+
 }
 
 .show_modal {
@@ -32,5 +34,19 @@
 }
 
 .show_modal_down {
-  top: 20vh;
+  top: 30vh;
+}
+
+
+.slide-container {
+    width: 400vw;
+    transition: all 0.5s;
+}
+
+.slide-box{
+    width: 100vw;
+    float: left;
+}
+.slide-box img{
+    width: 100%;
 }
