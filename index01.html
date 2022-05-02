@@ -62,7 +62,11 @@ $("#send").on('click', function() {
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
+  <div class="line"></div>
 </nav>
+
+
+
 
 <div style="overflow: hidden;">
   <div class="slide-container">
@@ -103,6 +107,14 @@ window.addEventListener('scroll', function() {
   } else {
     $(".navbar-brand").css('font-size','30px');
   }
+
+  let i= 1;
+  if (document.querySelector('.line').scrollTop < 46 * i) {
+    document.querySelector(".line").style.width = i+'0%';
+    i++;
+  }
+
+
 });
 
 

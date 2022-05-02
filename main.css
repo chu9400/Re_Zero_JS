@@ -64,3 +64,11 @@
     font-size: 30px;
     transition: all 0.3s;
 }
+
+.line {
+    border-bottom: 5px solid black;
+    width: 0%;
+    position: relative;
+    top: 8px;
+    transition: all 0.5s;
+}
