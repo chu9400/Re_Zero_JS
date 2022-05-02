@@ -73,3 +73,12 @@ parseFloat(num);
 parseint(num);   
 toFixed는 문자로 반환하는데 이걸 다시 숫자로 반환하기.
 
+---
+
+### Scroll 속성
+ - 스크롤 위치 : scrollTop;   
+ - 스크롤 가능한 높이 : scrollHeight;   
+ - 박스가 화면에 보이는 높이 : clientHeight;      
+
+ - if (scrollTop + scrollHeight == clientHeight)   
+약관 다 내리면~~    

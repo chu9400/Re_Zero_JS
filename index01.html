@@ -47,60 +47,8 @@ $("#send").on('click', function() {
   } return false;
 
 })
-
-function 삼육구게임(num) {
-  if(num % 9 == 0 ) {
-    console.log('박수박수');
-  } else if (num % 3 == 0) {
-    console.log('박수');
-  } else {
-    console.log('통과');
-  }
-}
-
-삼육구게임(6);
-삼육구게임(9);
-삼육구게임(11);
-삼육구게임(18);
-
-function 합격했냐(a, b) {
-  if(a < 0 || a >100 || b < 0 || b > 100) {
-    console.log("다시 입력해 주세요."); 
-  } else if (a < 40 || b < 40) {
-    console.log("불합격"); 
-  } else if ( a + b < 120) {
-    console.log("불합격"); 
-  } else if (a + b >= 120) {
-    console.log("합격"); 
-  }
-}
-  
-합격했냐(70, 70); 
-합격했냐(30, 100);
-합격했냐(50, 50);
-합격했냐(-1, 500);
-
 </script>
 
-
-
-  <h1>Hello, world!</h1>
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <span class="navbar-brand">Navbar</span>
-        <button class="navbar-toggler" type="button">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </nav> 
-
-    <ul class="list-group">
-      <li class="list-group-item">An item</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
-      <li class="list-group-item">A fourth item</li>
-      <li class="list-group-item">And a fifth one</li>
-    </ul>
 
 
 <button id="login">로그인</button>
@@ -115,10 +63,6 @@ function 합격했냐(a, b) {
     </button>
   </div>
 </nav>
-
-<p>태조 이성계가 태어난 년도는?</p>
-<input type="text" id="answer">
-<button id="send-answer">제출</button>
 
 <div style="overflow: hidden;">
   <div class="slide-container">
@@ -144,47 +88,48 @@ function 합격했냐(a, b) {
 <button class="slide-4">4</button>
 <button class="slide-5">5</button>
 
+<div style="height: 1000px;"></div>
+
+<div style="width: 200px; height: 100px; overflow-y:scroll ;" class="yak">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dignissimos perspiciatis beatae non corporis dolor soluta? Ut odit ratione neque exercitationem, pariatur architecto recusandae tempora ab inventore! Explicabo, reprehenderit laudantium!
+</div>
+
+<script>
+
+$(window).on('scroll', function() {
+  let 스크롤 = $(window).scrollTop();
+  if(스크롤 >= 100) {
+    $(".navbar-brand").css('font-size','10px');
+  } else {
+    $(".navbar-brand").css('font-size','30px');
+  }
+});
+
+let yak = document.querySelector(".yak");
+
+yak.addEventListener('scroll', function() {
+  let top = yak.scrollTop;
+  let height = yak.scrollHeight;
+  let cl = yak.clientHeight;
+
+  if (top + cl >= height - 10) {
+    alert('띄우기');
+    console.log(top + cl);
+  }
+  
+
+} );
+
+
+
+  window.addEventListener('scroll', function() {
+    //console.log(window.scrollY);
+  });
+</script>
+
+
     <script>
 
-
-
-/*       document.querySelector(".slide-1").addEventListener("click", function() {
-        document.querySelector(".slide-container").style.transform="translateX(0vw)"
-      })
-      document.querySelector(".slide-2").addEventListener("click", function() {
-        document.querySelector(".slide-container").style.transform="translateX(-100vw)"
-      })
-      document.querySelector(".slide-3").addEventListener("click", function() {
-        document.querySelector(".slide-container").style.transform="translateX(-200vw)"
-      })
-
-      let prev = 1;
-      document.querySelector(".slide-4").addEventListener("click", function() {
-        if(prev == 0) {
-          document.querySelector(".slide-container").style.transform="translateX(-0vw)";
-          prev++;
-        } else if (prev == 1) {
-          document.querySelector(".slide-container").style.transform="translateX(-200vw)";
-          prev++;
-        } else if (prev == 2) {
-          document.querySelector(".slide-container").style.transform="translateX(-100vw)";
-          prev=0;
-        } 
-      });
-
-      let next = 1;
-      document.querySelector(".slide-5").addEventListener("click", function() {
-        if(next == 0) {
-          document.querySelector(".slide-container").style.transform="translateX(-0vw)";
-          next++;
-        } else if (next == 1) {
-          document.querySelector(".slide-container").style.transform="translateX(-100vw)";
-          next++;
-        } else if (next == 2) {
-          document.querySelector(".slide-container").style.transform="translateX(-200vw)";
-          next=0;
-        } 
-      }) */
 
       let num = document.querySelectorAll(".slide-box").length;
       let test = 1;
@@ -198,28 +143,6 @@ function 합격했냐(a, b) {
           test=0;
         }
       })
-
-      
-      
-
-
-
-
-
-
-      let x = 0;
-      const 버튼 = document.querySelector("#send-answer");
-      let 입력 = document.querySelector("#answer");
-
-      버튼.addEventListener('click', function() {
-        x++;
-        if(입력.value == 1335) {
-          alert('정답입니다.');
-        } else if (x >= 3 && 입력.value != 1335) {
-          alert('멍청이!');
-        }
-      });
-
 
       document.querySelector('.navbar-toggler').addEventListener('click', function() {
         document.querySelector('.list-group').classList.toggle('show');
@@ -248,8 +171,6 @@ function 합격했냐(a, b) {
 
         console.log(count);
       })
-
-
 
     </script>
     
