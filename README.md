@@ -80,5 +80,6 @@ toFixed는 문자로 반환하는데 이걸 다시 숫자로 반환하기.
  - 스크롤 가능한 높이 : scrollHeight;
  - 박스가 화면에 보이는 높이 : clientHeight;
 
- - if (scrollTop + scrollHeight == clientHeight)   
-  먄약 스크롤바(약관) 다 내리면~ 이후 코드
+ - if (scrollTop + scrollHeight == clientHeight -10)   
+  먄약 스크롤바(약관) 다 내리면~ 이후 코드  
+  디바이스 마다 clientHeight가 달라서 clientHeight - 10 정도 해줘야함

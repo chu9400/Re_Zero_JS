@@ -96,14 +96,16 @@ $("#send").on('click', function() {
 
 <script>
 
-$(window).on('scroll', function() {
-  let 스크롤 = $(window).scrollTop();
-  if(스크롤 >= 100) {
+
+window.addEventListener('scroll', function() {
+  if(window.scrollY >= 100) {
     $(".navbar-brand").css('font-size','10px');
   } else {
     $(".navbar-brand").css('font-size','30px');
   }
 });
+
+
 
 let yak = document.querySelector(".yak");
 
