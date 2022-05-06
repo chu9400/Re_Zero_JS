@@ -98,6 +98,13 @@ $("#send").on('click', function() {
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dignissimos perspiciatis beatae non corporis dolor soluta? Ut odit ratione neque exercitationem, pariatur architecto recusandae tempora ab inventore! Explicabo, reprehenderit laudantium!
 </div>
 
+
+
+
+
+
+
+
 <script>
 
 
@@ -108,11 +115,18 @@ window.addEventListener('scroll', function() {
     $(".navbar-brand").css('font-size','30px');
   }
 
-  let i= 1;
-  if (document.querySelector('.line').scrollTop < 46 * i) {
-    document.querySelector(".line").style.width = i+'0%';
-    i++;
+  let i= window.scrollY * 0.1;
+  //console.log(i);
+  if(i > 93) {
+    i = 100;
+    document.querySelector(".line").style.width = i+'%';
+  } else {
+    document.querySelector(".line").style.width = i+'%';
   }
+
+
+
+  console.log(document.querySelector(".line").style.width = i+'%');
 
 
 });
@@ -140,6 +154,39 @@ yak.addEventListener('scroll', function() {
     //console.log(window.scrollY);
   });
 </script>
+
+
+
+<div class="alert alert-danger">
+  <span id="num">5</span>초 이내 구매시 사은품 증정
+</div>
+
+<script>
+  let time = 5 ;
+  function 함수01() {
+    time--;
+    $("#num").html(time);
+    if(time < 0){
+      document.querySelector(".alert").style.display = 'none';
+    }
+  }
+
+  setInterval(함수01, 1000);
+
+function 할인(a, b) {
+  let result = a / 10;
+  if(b == true) {
+    result = result * 2.5;
+  }
+  return a - result;
+}
+
+할인(10,true);
+
+</script>
+
+
+
 
 
     <script>

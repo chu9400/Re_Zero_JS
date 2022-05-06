@@ -84,5 +84,34 @@ toFixed는 문자로 반환하는데 이걸 다시 숫자로 반환하기.
   코드 활용 예) 먄약 스크롤바(약관) 다 내리면 이후 코드.    
   디바이스 마다 clientHeight가 달라서 clientHeight - 10 정도 해줘야함.
 
-- Scroll 속성은 1초에 60번이라서 컴퓨터에 부담, 방지 방법있음.
-- Scroll 속성은  body 태그 끝나기 전에 넣기
+- Scroll 속성은 1초에 60번이라서 컴퓨터에 부담, 방지 방법있음.   
+- Scroll 속성은  body 태그 끝나기 전에 넣기.   
+
+
+---   
+
+### 반응형 가로 스크롤 bar 코드
+    <style>
+        .line {
+            border-bottom: 5px solid black;
+            width: 0%;
+            position: fixed;
+            transition: all 0.1s; 
+        }
+    </style>
+    <!-- 스크롤 주려고 2000px -->
+    <div style="height: 2000px;">
+        <div class="line"></div>
+    </div>
+    <script>
+         window.addEventListener('scroll', function() {
+            let scrollTop = document.querySelector('html').scrollTop;
+            let scrollHeight = document.querySelector('html').scrollHeight - document.querySelector('html').clientHeight;
+            let result = document.querySelector(".line").style.width = (scrollTop / scrollHeight) * 100;
+            document.querySelector(".line").style.width = result + '%';
+
+            console.log(scrollHeight);
+        });
+    </script> 
+
+---  
