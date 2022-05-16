@@ -122,7 +122,7 @@ for(let i = 0; i < item.length; i++>){
 }    
    
    
-
+   
 ### forEach   
 var pants = [28, 30, 32];   
 pants.forEach(function(a, i){   
@@ -146,7 +146,7 @@ for (var key in obj){
 지금 key라고 작명하는 부분은 반복문이 돌 때 마다 object자료 안에 있던 key값이 됩니다.   
    
 
-   
+
 ### arrow function 문법   
 var pants = [28, 30, 32];   
 pants.forEach(function(a){   
