@@ -117,9 +117,11 @@ toFixed는 문자로 반환하는데 이걸 다시 숫자로 반환하기.
 ### 반복문
 
 ### for   
+<script>   
 for(let i = 0; i < item.length; i++>){
   console.log("test");
 }   
+</script>   
    
 ### forEach   
 var pants = [28, 30, 32];   
@@ -136,6 +138,7 @@ for (var key in obj){
   console.log(key);   
   console.log(obj[key]);   
 }   
+   
  for in 반복문 쓰면 object 자료 안에 있는 key와 value를 다 출력해볼 수도 있습니다.   
 
 지금 key라고 작명하는 부분은 반복문이 돌 때 마다 object자료 안에 있던 key값이 됩니다.   
