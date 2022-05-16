@@ -109,9 +109,59 @@ toFixed는 문자로 반환하는데 이걸 다시 숫자로 반환하기.
             let scrollHeight = document.querySelector('html').scrollHeight - document.querySelector('html').clientHeight;
             let result = document.querySelector(".line").style.width = (scrollTop / scrollHeight) * 100;
             document.querySelector(".line").style.width = result + '%';
-
-            console.log(scrollHeight);
         });
     </script> 
 
----  
+---   
+
+### 반복문
+
+#### for   
+for(let i = 0; i < item.length; i++>){
+  console.log("test");
+}   
+   
+#### forEach   
+var pants = [28, 30, 32];
+pants.forEach(function(a, i){
+  console.log(a,i)
+});   
+- forEach 콜백함수 안에 파라미터 2개 입력 가능   
+- 첫 파라미터는 반복문 돌 때 마다 array 안에 있던 하나하나의 데이터가 되고   
+둘 째 파라미터는 반복문 돌 때 마다 0부터 1씩 증가하는 정수가 됨.   
+   
+#### for in   
+var obj = { name : 'kim', age : 20 }
+for (var key in obj){
+  console.log(key);
+  console.log(obj[key]);
+}   
+ for in 반복문 쓰면 object 자료 안에 있는 key와 value를 다 출력해볼 수도 있습니다.   
+
+지금 key라고 작명하는 부분은 반복문이 돌 때 마다 object자료 안에 있던 key값이 됩니다.   
+   
+#### arrow function 문법   
+var pants = [28, 30, 32];
+pants.forEach(function(a){
+  console.log(a)
+});
+
+pants.forEach((a) => {
+  console.log(a)
+});
+   
+혹은 
+let 함수 = function(){ console.log('안녕') }
+let 함수 = () => { console.log('안녕') }
+   
+이렇게 쓰기도 함.
+
+##### 주의사항   
+함수 안에서 this를 써야할 경우   
+
+- 그냥 함수는 함수 안에서 this를 알맞게 재정의해줍니다.
+- arrow function은 함수 안에서 this를 재정의해주지 않고 바깥에 있던 this를 그대로 씁니다.
+그래서 이벤트리스너 콜백함수안에서 this를 써야하면 arrow function 쓰면 의도와 다르게 동작할 수도 있습니다.
+그런데선 쓰지마십시오
+
+---

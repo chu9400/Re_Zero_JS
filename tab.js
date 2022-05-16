@@ -1,28 +1,13 @@
-/* document.querySelectorAll('.tab-button')[0].addEventListener('click', function() {
-    document.querySelectorAll('.tab-button').classList.remove('orange');
+let classNum = $(".tab-button");
 
-}) ; */
+for(let i = 0; i < classNum.length; i++) {
+    $(".tab-button").eq(i).on('click', function() {
+        $(".tab-button").removeClass('orange');
+        $(".tab-button").eq(i).addClass('orange');
+        $(".tab-content").removeClass('show');
+        $(".tab-content").eq(i).addClass('show');
+        console.log(i);
+    });
+}
 
-$(".tab-button").eq(0).on('click', function() {
-    $(".tab-button").removeClass('orange');
-    $(".tab-button").eq(0).addClass('orange');
 
-    $(".tab-content").removeClass('show');
-    $(".tab-content").eq(0).addClass('show');
-});
-
-$(".tab-button").eq(1).on('click', function() {
-    $(".tab-button").removeClass('orange');
-    $(".tab-button").eq(1).addClass('orange');
-    
-    $(".tab-content").removeClass('show');
-    $(".tab-content").eq(1).addClass('show');
-});
-
-$(".tab-button").eq(2).on('click', function() {
-    $(".tab-button").removeClass('orange');
-    $(".tab-button").eq(2).addClass('orange');
-    
-    $(".tab-content").removeClass('show');
-    $(".tab-content").eq(2).addClass('show');
-});

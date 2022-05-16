@@ -33,6 +33,18 @@
 </div>
 
 <script>
+  /* $(".black-bg").on('click', function() {
+    $(".black-bg").css('display', 'none');
+  }); */
+
+  document.querySelector(".black-bg").addEventListener('click', function() {
+    document.querySelector(".black-bg").style.display = 'none';
+  });
+
+</script>
+
+
+<script>
 $("#send").on('click', function() {
   if(!$("#name").val()) {
     alert('아디를 입력해 주세요.');

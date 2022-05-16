@@ -51,6 +51,8 @@
       .show {
         display: block;
       }
+
+      .form-hide { display: none;}
     </style>
     
     <div class="container mt-5">
@@ -58,6 +60,7 @@
         <li class="tab-button">Products</li>
         <li class="tab-button orange">Information</li>
         <li class="tab-button">Shipping</li>
+        <li class="tab-button">333</li>
       </ul>
       <div class="tab-content">
         <p>상품설명입니다. Product</p>
@@ -68,8 +71,59 @@
       <div class="tab-content">
         <p>배송정보입니다. Shipping</p>
       </div>
+      <div class="tab-content">
+        <p>배송정보입니다.333 Shipping</p>
+      </div>
     </div> 
 
+    <form class="container my-5 form-group">
+      <p>상품선택</p>
+      <select class="form-select mt-2">
+        <option>모자</option>
+        <option>셔츠</option>
+        <option>바지</option>
+      </select>
+
+      <select class="form-select mt-2 form-hide" >
+        <option>95</option>
+        <option>100</option>
+        <option>105</option>
+      </select>
+    </form>
+
+    <script>
+      var pants = [28,30,32, 34];      
+      var shirts = [95, 100, 105];
+
+      $(".form-select").eq(0).on('change', function(e) {
+        let value = e.currentTarget.value;
+        if(value == '셔츠') {
+          $(".form-select").eq(1).removeClass('form-hide');
+          $(".form-select").eq(1).html("");
+          shirts.forEach(function(h) {
+            $(".form-select").eq(1).append(`<option>${h}</option>`);
+          });
+        } else if (this.value == '바지') {
+          $(".form-select").eq(1).removeClass('form-hide');
+          $(".form-select").eq(1).html("");
+          pants.forEach(function(h) {
+            $(".form-select").eq(1).append(`<option>${h}</option>`);
+          }); 
+
+        }
+        else {
+          $(".form-select").eq(1).addClass('form-hide');
+        }
+      });
+
+      var obj = { name : 'kim', age : [20,40] }
+
+      for (var item in obj){
+        console.log(obj[item]);
+      }
+
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="tab.js"></script>
