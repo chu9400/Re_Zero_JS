@@ -122,9 +122,9 @@ for(let i = 0; i < item.length; i++>){
 }   
    
 ### forEach   
-var pants = [28, 30, 32];
-pants.forEach(function(a, i){
-  console.log(a,i)
+var pants = [28, 30, 32];   
+pants.forEach(function(a, i){   
+  console.log(a,i)   
 });   
 - forEach 콜백함수 안에 파라미터 2개 입력 가능   
 - 첫 파라미터는 반복문 돌 때 마다 array 안에 있던 하나하나의 데이터가 되고   
