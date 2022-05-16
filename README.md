@@ -117,7 +117,7 @@ toFixed는 문자로 반환하는데 이걸 다시 숫자로 반환하기.
 ### 반복문
 
 
-1. ### forEach   
+### 1. forEach   
 <pre><code>
 var pants = [28, 30, 32];   
 pants.forEach(function(a, i){   
@@ -130,7 +130,7 @@ pants.forEach(function(a, i){
    
 
 
-2. ### for in   
+### 2. for in   
 <pre><code>
 var obj = { name : 'kim', age : 20 }   
 for (var key in obj){   
@@ -144,7 +144,7 @@ for (var key in obj){
    
 
 
-3. ### arrow function 문법  
+### 3. arrow function 문법  
 <pre><code> 
 var pants = [28, 30, 32];   
 pants.forEach(function(a){   
