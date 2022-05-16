@@ -117,10 +117,11 @@ toFixed는 문자로 반환하는데 이걸 다시 숫자로 반환하기.
 ### 반복문
 
 * ### for   
+<pre><code>
 for(let i = 0; i < item.length; i++>){
   console.log("test");
 }    
-   
+</code></pre>
    
    
 * ### forEach   
