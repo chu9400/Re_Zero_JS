@@ -125,10 +125,12 @@ for(let i = 0; i < item.length; i++>){
    
    
 * ### forEach   
+<pre><code>
 var pants = [28, 30, 32];   
 pants.forEach(function(a, i){   
   console.log(a,i)   
-});   
+});  
+</code></pre>   
 - forEach 콜백함수 안에 파라미터 2개 입력 가능   
 - 첫 파라미터는 반복문 돌 때 마다 array 안에 있던 하나하나의 데이터가 되고   
 둘 째 파라미터는 반복문 돌 때 마다 0부터 1씩 증가하는 정수가 됨.   
@@ -136,19 +138,21 @@ pants.forEach(function(a, i){
 
 
 * ### for in   
+<pre><code>
 var obj = { name : 'kim', age : 20 }   
 for (var key in obj){   
   console.log(key);   
   console.log(obj[key]);   
 }   
-   
+</code></pre>   
  for in 반복문 쓰면 object 자료 안에 있는 key와 value를 다 출력해볼 수도 있습니다.   
 
 지금 key라고 작명하는 부분은 반복문이 돌 때 마다 object자료 안에 있던 key값이 됩니다.   
    
 
 
-* ### arrow function 문법   
+* ### arrow function 문법  
+<pre><code> 
 var pants = [28, 30, 32];   
 pants.forEach(function(a){   
   console.log(a)   
@@ -157,7 +161,7 @@ pants.forEach(function(a){
 pants.forEach((a) => {   
   console.log(a)   
 });   
-   
+</code></pre>   
 혹은   
 let 함수 = function(){ console.log('안녕') }   
 let 함수 = () => { console.log('안녕') }   
