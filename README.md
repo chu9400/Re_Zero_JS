@@ -116,12 +116,12 @@ toFixed는 문자로 반환하는데 이걸 다시 숫자로 반환하기.
 
 ### 반복문
 
-#### for   
+### for   
 for(let i = 0; i < item.length; i++>){
   console.log("test");
 }   
    
-#### forEach   
+### forEach   
 var pants = [28, 30, 32];
 pants.forEach(function(a, i){
   console.log(a,i)
@@ -130,7 +130,7 @@ pants.forEach(function(a, i){
 - 첫 파라미터는 반복문 돌 때 마다 array 안에 있던 하나하나의 데이터가 되고   
 둘 째 파라미터는 반복문 돌 때 마다 0부터 1씩 증가하는 정수가 됨.   
    
-#### for in   
+### for in   
 var obj = { name : 'kim', age : 20 }   
 for (var key in obj){   
   console.log(key);   
@@ -140,7 +140,7 @@ for (var key in obj){
 
 지금 key라고 작명하는 부분은 반복문이 돌 때 마다 object자료 안에 있던 key값이 됩니다.   
    
-#### arrow function 문법   
+### arrow function 문법   
 var pants = [28, 30, 32];   
 pants.forEach(function(a){   
   console.log(a)   
@@ -150,13 +150,13 @@ pants.forEach((a) => {
   console.log(a)   
 });   
    
-혹은 
+혹은   
 let 함수 = function(){ console.log('안녕') }   
 let 함수 = () => { console.log('안녕') }   
    
 이렇게 쓰기도 함.
 
-##### 주의사항   
+#### 주의사항   
 함수 안에서 this를 써야할 경우   
 
 - 그냥 함수는 함수 안에서 this를 알맞게 재정의해줍니다.
