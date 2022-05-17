@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    var 출석부 = ['흥민', '영희', '철수', '재석', '철수'];
+
+    function 이름찾기(name){
+      for (let i = 0; i < 출석부.length; i++) {
+        if(출석부[i] == name ) {
+          console.log('있어요');
+          return false;
+        }
+      }
+    }  
+
+    이름찾기('철수');
+    이름찾기('명수');
+
+
+    function 함수(a, b) {
+      let result = 0;
+      let total = 0;
+      for(let i = 0; i < a.length; i++) {
+        result += a[i];
+      }
+      if(result / a.length < b) {
+        total =  b - result;
+        console.log("평균보다 " + total + " 올랐어요" );
+      } else if (result / a.length > b) {
+        total = result - b;
+        console.log("평균보다 " + total + "떨어졌어요 재수추천");
+      }
+    }
+    
+    함수([10, 20, 30, 40, 50], 40);
+    함수([40,40,40], 20);
+      
+
+
+   
+
+
+
+    
+
+  
+  </script>
+
+  
+</body>
+</html>
