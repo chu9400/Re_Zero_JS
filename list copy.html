@@ -17,12 +17,6 @@
 
     <div class="container">
       <div class="row">
-
-         <!--  <div class="col-sm-4">
-            <img src="https://via.placeholder.com/600" class="w-100">
-            <h5>Card title</h5>
-            <p>가격 : 70000</p>
-          </div> -->
   
       </div>
     </div> 
@@ -33,7 +27,6 @@
         {id: 1, price:5000, title:'Springfield Shirt'},
         {id: 2, price:6000, title:'Black Monastery'}
       ];
-
 
       for(let i = 0; i < products.length; i++) {
         var print = `
@@ -51,7 +44,7 @@
   <div class="btn btn-danger more">더보기</div>
 </div>
 
-<div class="container">
+<div class="container my-lg-3">
   <div class="btn btn-secondary price">가격순정렬</div>
 </div>
 
@@ -60,54 +53,46 @@
 </div>
 
 <script>
-  //6만원 이하 정렬
-  $('.min').on('click', function() {
-    var arr3 = 
-      products.filter(function(a) {
-          return a.price <= 6000;
-      });
 
-      $(".row").html('');
+var 어레이 = [7,3,5,2,40];
+var 어레이2 = 어레이.filter(function(a) {
+  return a > 4;
+});
 
-    for(let i = 0; i < arr3.length; i++) {
-        var print = `
-        <div class="col-sm-4">
-              <img src="https://via.placeholder.com/600" class="w-100">
-              <h5>${arr3[i].title}</h5>
-              <p>가격 : ${arr3[i].price}</p>
-            </div>
-        `;
-        $(".row").append(print);
-      }
+console.log(어레이2);
+
+
+
+
+
+$('.price').on('click', function() {
+  products.sort((a,b) => {
+    return a.price - b.price;
   });
 
-//가격순 정렬
-  $('.price').on('click', function() {
-
-    products.sort(function(a, b) {
-      console.log(a);
-      return a.price - b.price;
-    });
-
-  $(".row").html('');
-
-    for(let i = 0; i < products.length; i++) {
-        var print = `
-        <div class="col-sm-4">
-              <img src="https://via.placeholder.com/600" class="w-100">
-              <h5>${products[i].title}</h5>
-              <p>가격 : ${products[i].price}</p>
-            </div>
-        `;
-        $(".row").append(print);
-      }
-
-    
-  });
+  $('.row').html('');
+  for(let i = 0; i < products.length; i++) {
+    var print = `
+    <div class="col-sm-4">
+          <img src="https://via.placeholder.com/600" class="w-100">
+          <h5>${products[i].title}</h5>
+          <p>가격 : ${products[i].price}</p>
+        </div>
+    `;
+    $(".row").append(print);
+  }
+});
 
 
 
-// 더보기
+
+
+
+
+
+
+
+
   let num = 0;
 
   function shop(url) {
