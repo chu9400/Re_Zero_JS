@@ -172,9 +172,9 @@ let 함수 = () => { console.log('안녕') }
 
 ### 정렬   
 
-#### sort / filter / map   
+### 1.sort / 2.filter / 3.map   
    
-##### sort
+### 1.sort
  - 원본이 변형됨.
  - 배열 정리해줌.   
 
@@ -217,7 +217,7 @@ let 함수 = () => { console.log('안녕') }
   console.log(arr);
 </code></pre>   
    
-#### filter      
+### 2. filter      
  - 원본 변형이 되지 않음.
  - 내가 원하는 값만 나오게 해줌
  - 변수에 저장해야 됨   
@@ -238,7 +238,7 @@ products라는 자료에서 6만원 이하만 필터하고 새로 html 생성하
 
 
 
-#### map   
+### 3. map   
  - 배열 안에 자료들 전부 변형
  - 변수에 저장해야 됨   
 
