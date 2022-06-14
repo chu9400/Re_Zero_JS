@@ -34,10 +34,31 @@
               <img src="https://via.placeholder.com/600" class="w-100">
               <h5>${products[i].title}</h5>
               <p>가격 : ${products[i].price}</p>
+              <button class="buy">구매</button>
             </div>
         `;
         $(".row").append(print);
       }
+
+      $('.buy').on('click', function(e) {
+        var title = $(e.target).siblings('h5').text();
+        localStorage.setItem('cart', JSON.stringify([title]));
+      })
+
+
+
+      $('.buy').on('click', () => {
+        var one = document.querySelector('.buy').previousSibling;
+        console.log(one);
+
+      })
+
+
+      localStorage.setItem('이름','choi');
+      
+      var arr = [1,2,3];
+      var newArr = JSON.stringify(arr);
+      localStorage.setItem('num', newArr);
     </script>
 
 <div class="container">
@@ -53,15 +74,24 @@
 </div>
 
 <script>
+$('.min').on('click', function() {
+  var min = 
+    products.filter((a) => {
+      return a.price <= 6000;
+    });
 
-var 어레이 = [7,3,5,2,40];
-var 어레이2 = 어레이.filter(function(a) {
-  return a > 4;
+  $('.row').html('');
+  for(let i = 0; i < min.length; i++) {
+    var print = `
+    <div class="col-sm-4">
+          <img src="https://via.placeholder.com/600" class="w-100">
+          <h5>${min[i].title}</h5>
+          <p>가격 : ${min[i].price}</p>
+        </div>
+    `;
+    $(".row").append(print);
+  }
 });
-
-console.log(어레이2);
-
-
 
 
 
